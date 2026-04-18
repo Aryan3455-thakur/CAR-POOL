@@ -1,5 +1,5 @@
 # CAR-POOL
 College carpool system nmims basic features
-1 create ride only on edestination nmims
-2 accept of reject ride
-3 requst ride 
+1.Create ride only one destination NMIMS CHANDIGARH. 
+2.Accept of Reject ride. 
+3.Requst ride. 
