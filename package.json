@@ -1,0 +1,17 @@
+{
+  "name": "nmims-carpool",
+  "version": "1.0.0",
+  "description": "NMIMS community carpool app with HTML/CSS frontend and Node.js + MySQL backend",
+  "main": "server.js",
+  "scripts": {
+    "start": "node server.js"
+  },
+  "dependencies": {
+    "bcryptjs": "^2.4.3",
+    "cors": "^2.8.5",
+    "dotenv": "^17.3.1",
+    "express": "^5.2.1",
+    "express-session": "^1.19.0",
+    "mysql2": "^3.20.0"
+  }
+}

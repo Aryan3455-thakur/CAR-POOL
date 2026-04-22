@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Dashboard - NMIMS Carpool</title>
+  <link rel="stylesheet" href="public/styles.css" />
+</head>
+<body>
+  <nav class="nav">
+    <div class="logo">NMIMS Community Carpool</div>
+    <div class="nav-right">
+      <span id="welcomeName"></span>
+      <button id="logoutBtn">Logout</button>
+    </div>
+  </nav>
+
+  <main class="container">
+    <h1 class="section-title">Dashboard</h1>
+    <p id="message" class="msg hidden"></p>
+
+    <section class="dashboard-grid">
+      <div class="card">
+        <h2 class="section-title">Rider Dashboard</h2>
+        <form id="rideForm" class="form-grid">
+          <label>Pickup City
+            <select name="pickupCity" required>
+              <option>Chandigarh</option>
+              <option>Panchkula</option>
+              <option>Zirakpur</option>
+            </select>
+          </label>
+          <label>Pickup Point <input name="pickupPoint" required /></label>
+          <label>Date <input name="rideDate" type="date" required /></label>
+          <label>Time <input name="rideTime" type="time" required /></label>
+          <label>Seats <input name="totalSeats" type="number" min="1" required /></label>
+          <button type="submit">Create Ride</button>
+        </form>
+
+        <h3>Your Created Rides</h3>
+        <div id="myRides"></div>
+
+        <h3>Incoming Requests</h3>
+        <div id="incomingRequests"></div>
+      </div>
+
+      <div class="card">
+        <h2 class="section-title">Requester Dashboard</h2>
+
+        <h3>Available Rides</h3>
+        <div id="availableRides"></div>
+
+        <h3>My Requests</h3>
+        <div id="myRequests"></div>
+      </div>
+    </section>
+  </main>
+
+  <script src="js/app.js"></script>
+  <script src="js/dashboard.js"></script>
+</body>
+</html>
